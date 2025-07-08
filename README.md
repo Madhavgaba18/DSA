@@ -1,2 +1,2 @@
-# DSA_C-
+# DSA_C++
 My Practice of DSA
