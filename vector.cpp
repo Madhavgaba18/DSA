@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits.h>
 #include <vector>
 
 using namespace std;
@@ -32,10 +33,30 @@ void reverse_vector(vector<int> vec)
     }
 }
 
+// printing all subarray by brute force
+void subarray(vector<int> vec)
+{
+    int count = 0;
+    for (int start = 0; start < vec.size(); start++)
+    {
+        for (int end = start; end < vec.size(); end++)
+        {
+            for (int i = start; i <= end; i++)
+            {
+                cout << vec[i];
+            }
+            cout << " ";
+            count++;
+        }
+        cout << endl;
+    }
+    cout << "Total subarrays: " << count << endl;
+}
+
 int main()
 {
-    vector<int> vector_a;                      // empty vector
-    vector<int> vector_b = {1, 2, 3, 5, 6, 7}; // vector with initial values
+    vector<int> vector_a;                    // empty vector
+    vector<int> vector_b = {1, 2, -3, 4, 5}; // vector with initial values
 
     vector<int> vector_c(3, 2); // vector with 3 elements, each initialized to 2
     cout << vector_c[0];
@@ -59,5 +80,6 @@ int main()
     int size = vector_c.size();
     cout << size << endl;
 
+    subarray(vector_b);
     return 0;
 }
