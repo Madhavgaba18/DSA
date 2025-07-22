@@ -65,5 +65,21 @@ int majorElementOptimized(vector<int> vec)
         }
     }
 
-    return ans;
+    int count = 0;
+    for (int val : vec)
+    {
+        if (val == ans)
+        {
+            count++;
+        }
+    }
+
+    if (count > vec.size() / 2)
+    {
+        return ans;
+    }
+    else
+    {
+        return -1;
+    }
 }
