@@ -1,6 +1,7 @@
 #include <iostream>
 #include <limits.h>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -81,5 +82,6 @@ int main()
     cout << size << endl;
 
     subarray(vector_b);
+
     return 0;
 }
