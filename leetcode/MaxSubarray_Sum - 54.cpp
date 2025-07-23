@@ -1,18 +1,22 @@
 // Brute Force Approach
-void maximum_subarray(vector<int> vec)
+class Solution
 {
-    int maxSum = INT_MIN;
-    for (int start = 0; start < vec.size(); start++)
+public:
+    void maximum_subarray(vector<int> vec)
     {
-        int currentSum = 0;
-        for (int end = start; end < vec.size(); end++)
+        int maxSum = INT_MIN;
+        for (int start = 0; start < vec.size(); start++)
         {
-            currentSum += vec[end];
-            maxSum = max(currentSum, maxSum);
+            int currentSum = 0;
+            for (int end = start; end < vec.size(); end++)
+            {
+                currentSum += vec[end];
+                maxSum = max(currentSum, maxSum);
+            }
         }
+        cout << maxSum;
     }
-    cout << maxSum;
-}
+};
 
 // Kadane's Algorithm
 class Solution
