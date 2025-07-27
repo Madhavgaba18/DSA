@@ -60,32 +60,28 @@ int main()
     vector<int> vector_b = {1, 2, -3, 4, 5}; // vector with initial values
 
     vector<int> vector_c(3, 2); // vector with 3 elements, each initialized to 2
-    // cout << vector_c[0];
-    // cout << vector_c[1];
-    // cout << vector_c[2];
+    cout << vector_c[0];
+    cout << vector_c[1];
+    cout << vector_c[2];
 
-    // int res = linear_search(vector_b, 6);
-    // cout << res;
+    int res = linear_search(vector_b, 6);
+    cout << res;
 
-    // reverse_vector(vector_b);
-    // cout << endl;
+    reverse_vector(vector_b);
+    cout << endl;
 
-    // for (int val : vector_b)
-    // {
-    //     cout << val << endl;
-    // }
+    for (int val : vector_b)
+    {
+        cout << val << endl;
+    }
 
-    // vector_a.push_back(1);
-    // cout << vector_a[0] << endl;
+    vector_a.push_back(1);
+    cout << vector_a[0] << endl;
 
-    // int size = vector_b.size();
-    // cout << size << endl;
+    int size = vector_b.size();
+    cout << size << endl;
 
-    // subarray(vector_b);
-
-    int a = 2;
-
-    cout << long(a) << endl;
+    subarray(vector_b);
 
     return 0;
 }
