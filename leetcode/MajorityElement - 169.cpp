@@ -19,7 +19,7 @@ void majorElement(vector<int> vec)
     }
 }
 
-// Brute force optimized approach - O(n log n)
+// Brute force optimized approach using sorting - O(n log n)
 void majorSortedElement(vector<int> vec)
 {
     sort(vec.begin(), vec.end());
