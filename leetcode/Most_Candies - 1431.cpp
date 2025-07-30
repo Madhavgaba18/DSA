@@ -4,7 +4,7 @@ class Solution
 public:
     vector<bool> kidsWithCandies(vector<int> &candies, int extraCandies)
     {
-        vector<bool> result;
+        vector<bool> result(candies.size(), false);
         int greatest = 0;
         for (int i = 0; i < candies.size(); i++)
         {
@@ -13,13 +13,9 @@ public:
 
         for (int i = 0; i < candies.size(); i++)
         {
-            if (candies[i] + extraCandies < greatest)
+            if (candies[i] + extraCandies >= greatest)
             {
-                result.push_back(false);
-            }
-            else
-            {
-                result.push_back(true);
+                result[i] = true;
             }
         }
 
