@@ -18,8 +18,8 @@ int main()
     changeA(a);
 
     cout << a << endl;
-    // cout << ptr << endl;
-    // cout << *parPtr << endl;
-    // cout << ptr2 << endl;
+    cout << ptr << endl;
+    cout << *parPtr << endl;
+    cout << ptr2 << endl;
     return 0;
 }
