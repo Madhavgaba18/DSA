@@ -34,12 +34,12 @@ public:
                 }
             }
             else
-            { // odd
-                if (nums[mid] == nums[mid - 1])
+            {                                   // odd
+                if (nums[mid] == nums[mid - 1]) // right
                 {
                     start = mid + 1;
                 }
-                else
+                else // left
                 {
                     end = mid - 1;
                 }
