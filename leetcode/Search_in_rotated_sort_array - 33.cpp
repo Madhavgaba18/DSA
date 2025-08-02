@@ -1,3 +1,6 @@
+// Brute Force Approach is Linear search - O(n)
+
+// Opimized Approach - Binary Search - O(log n)
 class Solution
 {
 public:
