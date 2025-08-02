@@ -1,4 +1,6 @@
 // Brute Force Approach is Linear search and return max number in array
+//                OR
+// Brute Force Approach - arr[i-1] < arr[i] > arr[i+1]
 
 // Optimized Approach - Binary Search
 class Solution
