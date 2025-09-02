@@ -2,19 +2,19 @@
 class Solution
 {
 public:
-    void maximum_subarray(vector<int> vec)
+    int maxSubArray(vector<int> &nums)
     {
-        int maxSum = INT_MIN;
-        for (int start = 0; start < vec.size(); start++)
+        int sum = INT_MIN;
+        for (int i = 0; i < nums.size(); i++)
         {
-            int currentSum = 0;
-            for (int end = start; end < vec.size(); end++)
+            int currSum = 0;
+            for (int j = i; j < nums.size(); j++)
             {
-                currentSum += vec[end];
-                maxSum = max(currentSum, maxSum);
+                currSum = currSum + nums[j];
+                sum = max(sum, currSum);
             }
         }
-        cout << maxSum;
+        return sum;
     }
 };
 
